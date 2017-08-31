@@ -9,6 +9,7 @@ steps:
     dockerfile: Dockerfile
     no_cache: true
     metadata:
+      set:
         val1: 23
         val2: 60%
         val3: bla bla bla bla bla bla really long string
