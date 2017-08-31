@@ -14,3 +14,10 @@ steps:
         - val2: 60%
         - val3: bla bla bla bla bla bla really long string
         - val4: http://www.github.com/ArikMaor
+    on_success:
+      metadata:
+        set:
+          - '${{build.imageId}}':
+              - CF_QUALITY: true
+              - val5: 70%
+              - val6: bla bla bla bla bla bla really long string
