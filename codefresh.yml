@@ -1,0 +1,22 @@
+version: '1.0'
+steps:
+  build:
+    title: Test Repo Build
+    type: build
+    image_name: arikm/testimage
+    tag: latest
+    working_directory: ./
+    dockerfile: Dockerfile
+    no_cache: true
+    metadata:
+        - val1: 23
+        - val2: 60%
+        - val3: bla bla bla bla bla bla really long string
+        - val4: http://www.github.com/ArikMaor
+  launch:
+    title: Step Title
+    type: launch-composition
+    composition: 'Comomo'
+    environment_name: 'environment name'
+    composition_variables:
+      - 'VAR2=wwww'
