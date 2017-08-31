@@ -9,10 +9,10 @@ steps:
     dockerfile: Dockerfile
     no_cache: true
     metadata:
-        - val1: 23
-        - val2: 60%
-        - val3: bla bla bla bla bla bla really long string
-        - val4: http://www.github.com/ArikMaor
+        val1: 23
+        val2: 60%
+        val3: bla bla bla bla bla bla really long string
+        val4: http://www.github.com/ArikMaor
   launch:
     title: Step Title
     type: launch-composition
